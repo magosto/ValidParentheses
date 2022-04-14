@@ -1,2 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+using ValidParentheses;
+
+string input = "{[]}";
+Solution solution = new Solution();
+var valid = solution.isValid(input);
+Console.WriteLine(valid);
